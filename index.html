@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,7 +23,7 @@
     <div class="content-wrapper">
           <a href="#"><img src="" alt="unplugged logo"></a>
           <h1>unplugged</h1>
-          <div class="header-divider"></div>
+          <div class="header-divider">
           <nav>
                <ul>
                    <li><a href="faq/index.html" target="_blank">FAQ</a></li>
@@ -31,6 +31,7 @@
                </ul>
           </nav>
       </div>
+    </div>
   </header>
 
 <main>
@@ -57,36 +58,50 @@
 </aside>
 
   <section class="features">
-    <article>
+    <div class="content-wrapper">
       <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
+      <div class="features-items">
+        <article>
       <p class="tent-icon"></p>
       <p class="features-item-description">Located in a peaceful bungalow outside of Lake Geneva, Wisconson.</p>
-
+    </article>
+    <article>
       <p class="bed-icon"></p>
       <p class="features-item-description">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-
+    </article>
+    <article>
       <p class="chef-icon"</p>
       <p class ="features-item-description">Private chef team providing on demand meals - just like you team kitchen.</p>
-
+    </article>
+    <article>
       <p class="feet-icon"></p>
       <p class="features-item-description">5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
-
+    </article>
+    <article>
       <p class="smile-icon"></p>
       <p class="features-item-description">Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
-
+    </article>
+    <article>
       <p class="wifi-icon"></p>
       <p class="features-item-description">Dedicated computer room for times that you must wifi.</p>
-    </article>
-  </section>
+      </article>
+    </div>
+  </div>
+</section>
 
-<div class="reviews">
-  <h3>Be a better team in 5 days, like these.</h3>
-    <article>
+<section class="reviews">
+  <div class="content-wrapper">
+      <h3>Be a better team in 5 days, like these.</h3>
+      <article>
+        <div>
       <a href="#"><img src="" alt="group photo"></a>
-      <div class="reviews-title">LaCrue Bottling Co.<br>October 2017</br></div>
-      <div class="reviews-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+      <h3>LaCrue Bottling Co. October 2017</h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
     </article>
-</div>
+  </div>
+</section>
+
 </main>
 
 <footer>
@@ -107,13 +122,15 @@
                     <p><a href="https://www.instagram.com/nk_code2design/" target="_blank"></a></p>
                 </div>
             </div>
+          </div>
         </div> <!-- footer content ends -->
-    </div> <!--footer content-wrapper ends-->
 
-    <div class="copyright">
-      <p>Copyright 2019 | Unplugged</p>
-    </div>
-</footer>
+          <div class="copyright">
+              <p>Copyright 2019 | Unplugged</p>
+          </div>
+  </footer>
+<!--footer content-wrapper ends-->
+
 
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>

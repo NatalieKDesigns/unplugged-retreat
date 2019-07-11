@@ -97,6 +97,121 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* -------- Base Header - Footer Styles -------*/
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  /* Header Styles */
+
+header {
+  background-color: pink;
+  }
+
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  }
+
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+  /* Hero Styles */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+background-color: powderblue;
+}
+
+  /* Aside Styles */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+}
+
+aside .content-wrapper {
+  }
+
+aside .form-description {
+}
+
+aside h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+  /* Features Styles */
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navajowhite;
+}
+
+.features article h2, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* Reviews Styles */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: lavender;
+}
+
+.reviews article h3, p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* Footer Styles */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: bisque;
+}
+
+footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -263,4 +378,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
