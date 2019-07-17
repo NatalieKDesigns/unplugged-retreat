@@ -97,6 +97,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* General Styles */
+
+   html {
+   	      font-size: 16px;
+   }
+
+   body {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1em;
+   }
+
+   ul,
+   ol {
+
+   }
+
+   a {
+        color: #e2e3ed;
+        text-decoration: none;
+   }
+
+   h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.75em;
+        color: white;
+   }
+
+   h3,
+   h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.25;
+        color: white;
+   }
+
+   p {
+        font-size: 1.5em;
+        color: white;
+   }
+
+   img {
+          width: 100%;
+   }
+
+   figure {
+            margin: 0;
+   }
+
+   address {
+
+   }
+
+   .content-wrapper {
+
+   }
+
+
 /* -------- Base Header - Footer Styles -------*/
 
 header, footer {
@@ -104,6 +160,7 @@ header, footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
   }
 
   /* Header Styles */
@@ -111,9 +168,14 @@ header, footer {
 header {
   padding: 15px 0;
   height: 120px;
-  background-color: pink;
   }
 
+header figure {
+  width: 60%;
+  display: flex; justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 header .content-wrapper {
   display: flex;
@@ -147,8 +209,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: bisque;
-text-align: center;
+  text-align: center;
 }
 
 footer .content-wrapper {
@@ -181,7 +242,8 @@ footer .social-icons p {
   justify-content: flex-start;
   flex-flow: row wrap;
   height: 500px;
-  background-color: powderblue;
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area .content-wrapper {
@@ -199,7 +261,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: plum;
+  background-color: #527158;
 }
 
 aside .content-wrapper {
@@ -212,7 +274,8 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: navajowhite;
+  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
 }
 .features h2 {
   font-size: 30px;
@@ -241,7 +304,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lavender;
+  background-color: #2a423a;
 }
 
 .reviews .content-wrapper {
@@ -377,6 +440,31 @@ aside .content-wrapper {
   clear: both;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -404,6 +492,14 @@ header {
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
+}
+
+header figure {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -531,6 +627,16 @@ footer .content-wrapper {
 
 .content-wrapper {
   max-width: 960px;
+}
+
+/* Header */
+
+header figure {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* Hero */
