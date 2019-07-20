@@ -131,7 +131,7 @@ textarea {
    h4 {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
-        font-size: 1.225em;
+        font-size: 1.675em;
         color: white;
         margin: 20px 0;
    }
@@ -178,13 +178,6 @@ header {
   height: 100px;
   }
 
-header figure {
-  width: 60%;
-  display: flex; justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 header .content-wrapper {
   margin: 0;
   display: flex;
@@ -193,11 +186,19 @@ header .content-wrapper {
   flex-flow: row wrap;
   }
 
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
 .header-divider {
   background: #3a3a3a;
   height: 1px;
   width: 100%;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -214,6 +215,7 @@ header nav {
 header nav ul {
   width: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -255,17 +257,12 @@ footer .social-icons p {
   /* Hero Styles */
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  height: 500px;
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
-  background-size: cover;
-}
-
-.hero-area .content-wrapper {
-  padding: 50px 0 0 20px;
-  margin-left: 0;
 }
 
 .hero-area h2 {
@@ -281,10 +278,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-
-aside .content-wrapper {
-  padding: 25px 0 0 20px;
-  }
 
   aside .form {
     margin-top: 30px;
@@ -386,7 +379,7 @@ aside .content-wrapper {
 }
 
 .content-wrapper h2 {
-  margin: 0;
+  margin-top: 0;
 }
 
 .contact-content p {
@@ -613,6 +606,22 @@ width: 50%;
   justify-content: space-between;
 }
 
+.reviews h2 {
+  margin: 70px 0 20px 0;
+  width: 65%
+}
+
+.reviews article figure,
+.reviews article div {
+  width: 49%;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+}
+
+
 /* Footer */
 footer .content-wrapper {
   width: 65%;
@@ -685,7 +694,7 @@ footer .content-wrapper {
 /* Header */
 
 header figure {
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,8 +727,17 @@ aside .content-wrapper .form {
 }
 
 /* Reviews */
-.reviews article div {
-  width: 42%;
+
+.reviews h2 {
+  margin: 60px 0 95px 0;
+}
+
+.reviews h3 {
+  width: 60%;
+}
+
+.reviews article {
+  margin-bottom: 70px;
 }
 
 /* ===================
