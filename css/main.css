@@ -106,11 +106,13 @@ textarea {
    body {
           font-family: 'Open Sans', sans-serif;
           font-size: 1em;
+          color: #e2e3ed;
+          text-align: left;
    }
 
    ul,
    ol {
-
+     list-style-type: none;
    }
 
    a {
@@ -120,20 +122,24 @@ textarea {
 
    h2 {
         font-family: 'Poppins', sans-serif;
-        font-size: 3.75em;
+        font-size: 1.875em;
+        font-weight: 500;
         color: white;
    }
 
    h3,
    h4 {
         font-family: 'Poppins', sans-serif;
-        font-size: 2.25;
+        font-weight: 500;
+        font-size: 1.225em;
         color: white;
+        margin: 20px 0;
    }
 
    p {
-        font-size: 1.5em;
+        font-size: 1em;
         color: white;
+        line-height: 1.285;
    }
 
    img {
@@ -145,29 +151,31 @@ textarea {
    }
 
    address {
+     font-style: normal;
 
    }
 
    .content-wrapper {
-
+     width: 90%;
+     margin: 50px 0;
    }
 
 
 /* -------- Base Header - Footer Styles -------*/
 
 header, footer {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #202322;
   }
 
   /* Header Styles */
 
 header {
   padding: 15px 0;
-  height: 120px;
+  height: 100px;
   }
 
 header figure {
@@ -178,31 +186,40 @@ header figure {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 100%;
   }
 
 .header-divider {
+  background: #3a3a3a;
+  height: 1px;
   width: 100%;
+  margin: 10px 0 15px 0;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width 60%;
-  height: 55px;
 }
 
 header nav ul {
+  width: 100%;
+  margin: 0;
   display: flex;
   justify-content: space-around;
-  width: 40%;
+}
 
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
@@ -239,7 +256,7 @@ footer .social-icons p {
 
 .hero-area {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-flow: row wrap;
   height: 500px;
   background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
@@ -252,21 +269,48 @@ footer .social-icons p {
 }
 
 .hero-area h2 {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
   /* Aside Styles */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #527158;
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper {
   padding: 25px 0 0 20px;
   }
+
+  aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
 
   /* Features Styles */
 
@@ -279,12 +323,15 @@ aside .content-wrapper {
 }
 .features h2 {
   font-size: 30px;
-  margin: 0;
+  margin: 0 0 60px 0;
 }
 
-.features .content-wrapper {
-  padding: 50px 0 0 20px;
+.features article {
+  width: 55%;
+  margin: 30px 0;
+  text-align: center;
 }
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -293,39 +340,37 @@ aside .content-wrapper {
   padding-bottom: 50px;
 }
 
-.features article {
-  width: 55%;
+.features p {
   text-align: center;
+  margin: 0;
 }
+
 
   /* Reviews Styles */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #2a423a;
+  flex-flow: row wrap;
 }
 
-.reviews .content-wrapper {
-  padding: 50px 0 0 20px;
+.reviews h2 {
+  line-height: 1;
+  margin-bottom: 40px;
 }
 
 .reviews h3 {
-  width: 80%;
-  margin: 0;
+  width: 55%;
+  margin: 20px 0;
 }
-
-.reviews p {
-  padding-bottom: 45px;
-}
-
 
 /* ==========================================================================
    About Page
    ========================================================================== */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,10 +378,19 @@ aside .content-wrapper {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.content-wrapper h2 {
+  margin: 0;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -344,6 +398,7 @@ aside .content-wrapper {
    ========================================================================== */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,11 +406,33 @@ aside .content-wrapper {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
+
+.faq h2 {
+  margin: 0 0 40px 0;
+  line-height: 1;
+}
+
+.faq-content h4 {
+  margin: 0;
+}
+
+.faq-content {
+  margin-bottom: 45px;
+}
+
+footer h4 {
+  margin: 0;
+}
+footer address p {
+  margin-bottom: 40px;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -440,30 +517,6 @@ aside .content-wrapper {
   clear: both;
 }
 
-aside .form {
-  margin-top: 30px;
-}
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
