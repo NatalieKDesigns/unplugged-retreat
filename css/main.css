@@ -333,6 +333,11 @@ aside {
   padding-bottom: 50px;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   text-align: center;
   margin: 0;
@@ -744,6 +749,10 @@ aside .content-wrapper .form {
 
 .features article {
   flex-basis: 33%;
+}
+
+.features i {
+  font-size: 4.25em;
 }
 
 /* Reviews */
