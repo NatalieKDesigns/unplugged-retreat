@@ -253,6 +253,10 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+footer i {
+  font-size: 3.75em;
+  margin-top: 20px;
+}
 
   /* Hero Styles */
 
@@ -646,20 +650,30 @@ width: 50%;
 /* Footer */
 footer .content-wrapper {
   width: 65%;
-  margin: 100 0;
+  margin: 100px 0;
 }
 
-  .footer-content {
+.footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  footer .contact {
-    margin-bottom: 0;
+footer .contact p {
+  margin-top: 40px;
+  line-height: 1.5em;
+}
+
+footer .social-icons {
+  margin-top: 30px;
+}
+
+footer i {
+    font-size: 2.5em;
+    margin: 0 20px;
   }
 
-  footer .copyright {
+footer .copyright {
     width: 100%;
   }
 
@@ -774,7 +788,7 @@ About Page
 ===================== */
 
 .mission h2,
-.contact-section .comtent-wrapper h2 {
+.contact-section .content-wrapper h2 {
 width: 100%;
 }
 
@@ -794,9 +808,8 @@ Faq Page
   width: 100%;
 }
 
-.faq-content {
-  flex-basis: 33%
-}
+.faq .faq-content {
+  flex-basis: 45%
 }
 
 /* ==========================================================================
